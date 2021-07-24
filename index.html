@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center text-center">
+          <div class="card wid" style="width: 40%">
+            <img
+              src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ping Pong Score Keeper</h5>
+              <h1>
+                <span id="p1S">0</span> to
+                <span id="p2S">0</span>
+              </h1>
+              <div class="d-flex justify-content-center">
+                <p class="card-text">
+                  <i><b>Play To</b></i>
+                </p>
+                <select
+                  name=""
+                  id="playTo"
+                  class="form-select form-select-sm w-auto ms-5"
+                  aria-label=".form-select-sm example"
+                >
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="7">7</option>
+                  <option value="11">11</option>
+                </select>
+              </div>
+              <div
+                class="btn-group w-100 mt-3"
+                role="group"
+                aria-label="Basic example"
+              >
+                <button class="btn btn-primary" type="button" id="p1B">
+                  +1 Player 1
+                </button>
+                <button class="btn btn-success" type="button" id="p2B">
+                  +1 Player 2
+                </button>
+                <button class="btn btn-danger" type="button" id="reset">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
